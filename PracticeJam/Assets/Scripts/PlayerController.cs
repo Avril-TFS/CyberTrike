@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private bool isGrounded = false;
-    //private Transform groundCheck;
-    private LayerMask Ground;
-
     public float moveSpeed =10.0f;
-    
-    public Vector2 jumpForce;
-    public Transform attackPoint;
-    private Rigidbody2D rgbd;
-    //private boxCollider2D box2d;        // this is for the raycast
+    private Rigidbody2D rgbd;  
 
+    private bool isGrounded = false;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+    public float jumpForce = 10f;
+
+    public Transform attackPoint;
     public GameObject bulletPrefab;
 
     // Start is called before the first frame update
@@ -31,12 +29,13 @@ public class PlayerController : MonoBehaviour
         //float verticalMovement = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(horizontalMovement, 0);
-        rgbd.velocity = movement * moveSpeed;
+        rgbd.velocity = new Vector2(movement.x * moveSpeed, rgbd.velocity.y);
 
-       if(Input.GetKeyDown("space"))
-       {
-        rgbd.AddForce(jumpForce, ForceMode2D.Impulse);
-       }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        if(isGrounded && Input.GetKeyDown("space"))
+        {
+            rgbd.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }
 
         if(Input.GetMouseButtonDown(0)){
             Attack();
