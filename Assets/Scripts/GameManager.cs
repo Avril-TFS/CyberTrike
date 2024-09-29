@@ -8,15 +8,13 @@ public class GameManager : MonoBehaviour
     public Text timerText;
     public float timeRemaining = 150.0f;
 
-    public GameObject doorPreFab;
-    public Transform doorSpawn;
-
+    public GameObject door;
     public Text gameOverText;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        door.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,10 +46,7 @@ public class GameManager : MonoBehaviour
     }
     void CloseDoor()
     {
-        if(doorPreFab != null && doorSpawn != null)
-        {
-            GameObject door = Instantiate(doorPreFab, doorSpawn.position, doorSpawn.rotation);
-        }
+        door.SetActive(true);
     }
 
     public void GameOver()

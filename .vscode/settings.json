@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "PracticeJam.sln"
+    "dotnet.defaultSolution": "CyberTrike_PracticeJam.sln"
 }
