@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10.0f;
     private Rigidbody rgbd;
-    public float jumpForce = 11.0f;
-    public float downwardForce = 2.0f;
+    public float jumpForce = 12.0f;
+    public float downwardForce = 12.0f;
     public float maxFallSpeed = -15f;
 
     private bool isGrounded = false;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;   // This was to make the game play in unity like it would in webgl builds, webgl was causing jumping to be really floaty, so this let me make unity just as floaty so I could adjust the jumping force and gravity
         rgbd = GetComponent<Rigidbody>();                           // This tells the script to find the Rigidbody that is attached to whatever the script is attached to, in this case the player
         gameManager = GameObject.FindObjectOfType<GameManager>();      // This basically tells the script to search the scene in unity for the GameManager
     }

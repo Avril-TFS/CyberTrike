@@ -1165,4 +1165,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/VictoryScene.unity
-  playerPath: C:/Users/Sara/Documents/GitHub/CyberTrike_PracticeJam/WebGlBuild
+  playerPath: C:/Users/Sara/Documents/GitHub/CyberTrike_PracticeJam/WebGLBuild
