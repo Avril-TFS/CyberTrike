@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGlBuilds.loader.js";
+      var loaderUrl = buildUrl + "/WebGlBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGlBuilds.data.br",
-        frameworkUrl: buildUrl + "/WebGlBuilds.framework.js.br",
-        codeUrl: buildUrl + "/WebGlBuilds.wasm.br",
+        dataUrl: buildUrl + "/WebGlBuild.data",
+        frameworkUrl: buildUrl + "/WebGlBuild.framework.js",
+        codeUrl: buildUrl + "/WebGlBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PracticeJam",
@@ -98,7 +98,7 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/WebGlBuilds.jpg.br') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/WebGlBuild.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");

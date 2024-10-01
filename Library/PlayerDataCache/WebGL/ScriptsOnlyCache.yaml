@@ -90,21 +90,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2722}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 5074}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6622}
+      Script: {instanceID: 6620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -157,33 +157,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 2120}
+      Script: {instanceID: 2118}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2722}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 3222}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 5074}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6242}
+      Script: {instanceID: 6240}
     - Class: 114
-      Script: {instanceID: 6752}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 7056}
+      Script: {instanceID: 7054}
     - Class: 114
-      Script: {instanceID: 7222}
+      Script: {instanceID: 7220}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -238,23 +238,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1570}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 2534}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2722}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 4766}
+      Script: {instanceID: 4764}
     - Class: 114
-      Script: {instanceID: 4776}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 5074}
+      Script: {instanceID: 5072}
     - Class: 114
-      Script: {instanceID: 5364}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5818}
+      Script: {instanceID: 5816}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1165,4 +1165,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/VictoryScene.unity
-  playerPath: C:/Users/Sara/Documents/GitHub/CyberTrike_PracticeJam/WebGlBuilds
+  playerPath: C:/Users/Sara/Documents/GitHub/CyberTrike_PracticeJam/WebGlBuild
