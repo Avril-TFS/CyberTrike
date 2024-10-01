@@ -7299,7 +7299,7 @@ PrefabInstance:
       objectReference: {fileID: 114100138}
     - target: {fileID: 7211086480405156370, guid: 666263055fa4caf44ab723547df043bc, type: 3}
       propertyPath: downwardForce
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8670380532393949746, guid: 666263055fa4caf44ab723547df043bc, type: 3}
       propertyPath: m_Enabled
