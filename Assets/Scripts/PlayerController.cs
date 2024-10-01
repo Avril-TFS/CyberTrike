@@ -18,6 +18,13 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameManager gameManager;
 
+    public SpriteRenderer spriteRenderer;
+    public Sprite spriteOne;
+    public Sprite spriteTwo;
+    public Sprite spriteThree;
+    public Sprite spriteFour;
+    public Sprite spriteFive;
+
     //public float airControl = .5f;  // This is to try to make the player have less control when in the air
     // will remove if it doesnt work or feels bad
     // ... I didnt like it
@@ -63,6 +70,17 @@ public class PlayerController : MonoBehaviour
           {
               Attack();
           }*/
+
+        UpdateSprite(moveSpeed);
+
+        if (Input.GetAxis("Horizontal") > .2f)  // When the character moves horizontally with a positive value, which would be left
+        {
+            spriteRenderer.flipX = false;       // the sprite renderer will set the flip along the X axis to false
+        }
+        if (Input.GetAxis("Horizontal") < -.2f) // when the character moves horizontally negatively, to the right
+        {
+            spriteRenderer.flipX = true;        // the sprite renderer will set the flip along the X axis to true, causing the bike to turn around
+        }
     }
 
     /*void Attack()
@@ -88,6 +106,29 @@ public class PlayerController : MonoBehaviour
     // This method is called in BreakableBoxes.cs so that that script knows how fast the player is moving
     public float PlayerSpeed()
     {
-        return moveSpeed;     // basically just says hey the rigidbody is going this fast
+        return moveSpeed;     // basically just says hey the rigidbody is moving at this speed
+    }
+    void UpdateSprite(float speed)
+    {
+        if (speed < 15)
+        {
+            spriteRenderer.sprite = spriteOne;
+        }
+        else if (speed < 20)
+        {
+            spriteRenderer.sprite = spriteTwo;
+        }
+        else if (speed < 25)
+        {
+            spriteRenderer.sprite = spriteThree;
+        }
+        else if (speed < 30)
+        {
+            spriteRenderer.sprite = spriteFour;
+        }
+        else
+        {
+            spriteRenderer.sprite = spriteFive;
+        }
     }
 }
